@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hexo</title>
+        <subtitle></subtitle>
+        <icon>http://example.com/images/favicon.ico</icon>
+        <link>http://example.com</link>
+        <author>
+          <name>John Doe</name>
+        </author>
+        <description></description>
+        <language>en</language>
+        <pubDate>Thu, 07 Mar 2024 20:49:38 +0800</pubDate>
+        <lastBuildDate>Thu, 07 Mar 2024 20:49:38 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F/</guid>
+            <title>网站样式</title>
+            <link>http://example.com/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F/</link>
+            <category term="hexo使用" scheme="http://example.com/categories/hexo%E4%BD%BF%E7%94%A8/" />
+            <pubDate>Thu, 07 Mar 2024 20:49:38 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;shoka&lt;/span&gt; 样式，交互爽，好看又不乱，老早就馋了。&lt;/p&gt;
+&lt;h1 id=&#34;安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;git clone https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置&#34;&gt;#&lt;/a&gt; 配置&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;卸载掉默认的  &lt;code&gt;hexo-renderer-marked&lt;/code&gt;  (有默认的路径处理，不行就回退)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;npm un hexo-renderer-marked --save&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img data-src=&#34;image-20240307211424587.png&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安装  &lt;code&gt;npm i hexo-renderer-multi-markdown-it --save&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;遇到 Error: read ECONNRESET，网上是： &lt;code&gt;npm config set registry http://registry.npmjs.org/&lt;/code&gt;  更新代理&lt;/li&gt;
+&lt;li&gt;后细读发现是 puppeteer 安装问题，原文有提及，不使用 mermaid，加上 --ignore-scripts 忽略即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;按原文&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kZXBlbmRlbnRzLw==&#34;&gt;依赖插件&lt;/span&gt;安装插件，并且添加 / 更改相应的 yaml 配置&lt;/li&gt;
+&lt;li&gt;theme: shoka # 默认：landscape&lt;br /&gt;
+&lt;img data-src=&#34;image-20240307214022436.png&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9waWdwaWdsZXRzZ28uZ2l0aHViLmlvL2hleG8vc2hva2EvJUU5JTg1JThEJUU3JUJEJUFFc2hva2ElRTQlQjglQkIlRTklQTIlOTgv&#34;&gt;https://pigpigletsgo.github.io/hexo/shoka/ 配置 shoka 主题 /&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;后续&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;基本配置&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;界面设置&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbnlmbG92ZS9hcnRpY2xlL2RldGFpbHMvMTA4NzkxOTcw&#34;&gt;https://blog.csdn.net/xinyflove/article/details/108791970&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E5%9C%A8obisidian%E4%B8%8A%E4%BD%BF%E7%94%A8/</guid>
+            <title>在obisidian上使用</title>
+            <link>http://example.com/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E5%9C%A8obisidian%E4%B8%8A%E4%BD%BF%E7%94%A8/</link>
+            <category term="hexo使用" scheme="http://example.com/categories/hexo%E4%BD%BF%E7%94%A8/" />
+            <pubDate>Thu, 07 Mar 2024 16:44:47 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;参考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81NTQzMzM4MDU=&#34;&gt;Obsidian+Git 完美维护 Hexo 博客 - 知乎&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;模板&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模板&#34;&gt;#&lt;/a&gt; 模板&lt;/h1&gt;
+&lt;p&gt;用 hexo 命令创建会自带文档属性，用 obisidian 就是空白文档，但可以写个模板，直接插入，也不费多少事，免得还要去根目录开 bash。&lt;/p&gt;
+&lt;p&gt;创建一个模板文件夹如 Template，创建模板文件：&lt;br /&gt;
+编辑源码模式下，输入以下。title 就是文章名，date 在 obisidian 设置中自定义的日期&lt;/p&gt;
+&lt;figure class=&#34;highlight md&#34;&gt;&lt;figcaption data-lang=&#34;Markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token front-matter-block&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token front-matter yaml language-yaml&#34;&gt;title: 在obisidian上使用&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: 1709801087000&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;categories: &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tags:&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;a.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;目录维护&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#目录维护&#34;&gt;#&lt;/a&gt; 目录维护&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qdWVqaW4uY24vcG9zdC83MTIwMTg5NjE0NjYwMjU1Nzgx&#34;&gt;Hexo + Obsidian + Git 完美的博客部署与编辑方案 - 掘金&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmVzb24ub3JnL3B1Yi9lMmY2ZTIzOS8=&#34;&gt;【Hexo 插件系列】日志的自动分类插件 hexo-auto-category | ESON&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;hexo-auto-category&lt;/code&gt;  根据文件目录自动生成 categories 信息。&lt;br /&gt;
+对于博客  &lt;code&gt;source/_post/web/framework/hexo.md&lt;/code&gt; ，该插件会自动生成以下 &lt;code&gt;categories&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;categories&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; web  &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;-&lt;/span&gt; framework&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;安装： &lt;code&gt;npm install hexo-auto-category --save&lt;/code&gt; &lt;br /&gt;
+ 在  _config.yml 中添加&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Generate categories from directory-tree&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Dependencies: https://github.com/xu-song/hexo-auto-category&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# depth: the depth of directory-tree you want to generate, should &gt; 0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;auto_category&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token key atrule&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; depth&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;如果只想生成第一级目录分类，可以设置 &lt;code&gt;depth&lt;/code&gt;  属性为 1，以此内推。&lt;/p&gt;
+&lt;h1 id=&#34;图片&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片&#34;&gt;#&lt;/a&gt; 图片&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUyMzU3MjE3L2FydGljbGUvZGV0YWlscy8xMjc1NjIxNjM=&#34;&gt;# 如何让 Obsidian 的图片存储形式设置为 ./${filename}.assets&lt;/span&gt;&lt;br /&gt;
+ 头大的是这个，在上一篇文章中已经用了插件，相比自己手动更改 html 中的路径方便，但平时截图命名是用时间，待数字，其次 obsidian 默认存放位置固定，还需要手动移动文件和写引用。&lt;/p&gt;
+&lt;h2 id=&#34;位置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#位置&#34;&gt;#&lt;/a&gt; 位置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;关闭  &lt;code&gt;使用 Wiki 链接&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用插件 Custom Attachment Location（里面还有自动为粘贴的图像重命名的功能）&lt;/li&gt;
+&lt;li filename=&#34;&#34;&gt;在↑设置中的 Location xx：./$&lt;/li&gt;
+&lt;li&gt;设置 “文件与链接” 中附件选 “当前文件所在文件夹的子文件夹”，然后留空（由上面的插件自动填入了）&lt;/li&gt;
+&lt;li&gt;设置 “文件与链接” 中内部链接类型选 “尽可能短的方式”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Q：好像不支持中文，那就跟目录维护的冲突了，无法起中文名文件夹。不用 CATEGORIES，自行管理 categories？&lt;br /&gt;
+A：但好像可以&lt;/p&gt;
+&lt;h2 id=&#34;路径&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#路径&#34;&gt;#&lt;/a&gt; 路径&lt;/h2&gt;
+&lt;p&gt;改用&lt;br /&gt;
+ &lt;code&gt;npm install hexo-renderer-marked --save&lt;/code&gt; &lt;br /&gt;
+ 可行，且极好用&lt;br /&gt;
+见：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvLXJlbmRlcmVyLW1hcmtlZA==&#34;&gt;hexo-renderer-marked&lt;/span&gt;，有丰富的扩展选项&lt;br /&gt;
+_config 设置这两个。&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;marked&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;prependRoot&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;postAsset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;image-20240307202119236.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;文内链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文内链接&#34;&gt;#&lt;/a&gt; 文内链接&lt;/h1&gt;
+&lt;p&gt;obisidian 的双向链接 [[]] 怎么处理，只能换成&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/06/hexo%E4%BD%BF%E7%94%A8/hexo+github/</guid>
+            <title>hexo + github 博客搭建</title>
+            <link>http://example.com/2024/03/06/hexo%E4%BD%BF%E7%94%A8/hexo+github/</link>
+            <category term="hexo使用" scheme="http://example.com/categories/hexo%E4%BD%BF%E7%94%A8/" />
+            <pubDate>Wed, 06 Mar 2024 19:57:31 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;Hexo 是一个快速、简洁且高效的 &lt;strong&gt;博客框架&lt;/strong&gt;。它使用 Markdown（或其他渲染引擎）解析文章，在数秒内，即可使用靓丽的主题生成静态网页&lt;br /&gt;
+参考：&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d1c2hpYm8xMjMvYXJ0aWNsZS9kZXRhaWxzLzEyNDYxOTEyMw==&#34;&gt;【2023 最新版】Hexo+github 搭建个人博客并绑定个人域名_hexo 部署 github 绑定自定义域名 - CSDN 博客&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIuYWxpeXVuLmNvbS9hcnRpY2xlLzExOTg2NzM=&#34;&gt; Hexo 系列 (一) 搭建博客网站 - 阿里云开发者社区&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;npm-设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#npm-设置&#34;&gt;#&lt;/a&gt; npm 设置&lt;/h1&gt;
+&lt;p&gt;NPM 是随同 NodeJS 一起安装的包管理工具，能解决 NodeJS 代码部署上的很多问题，常见的使用场景有以下几种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;允许用户从 NPM 服务器下载别人编写的第三方包到本地使用。&lt;/li&gt;
+&lt;li&gt;允许用户从 NPM 服务器下载并安装别人编写的命令行程序到本地使用。&lt;/li&gt;
+&lt;li&gt;允许用户将自己编写的包或命令行程序上传到 NPM 服务器供别人使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;npm config set prefix &amp;quot;C:\Program Files\nodejs\node_global&amp;quot;&lt;/code&gt; &lt;br /&gt;
+ &lt;code&gt;npm config set cache &amp;quot;C:\Program Files\nodejs\node_cache&amp;quot;&lt;/code&gt; &lt;br /&gt;
+ 设置在这↑会有权限问题，麻烦。更改到外部↓&lt;br /&gt;
+ &lt;code&gt;npm config set prefix &amp;quot;D:\nodejs\prefix&amp;quot;&lt;/code&gt; &lt;br /&gt;
+ &lt;code&gt;npm config set cache &amp;quot;D:\nodejs\cache&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;hexo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hexo&#34;&gt;#&lt;/a&gt; Hexo&lt;/h1&gt;
+&lt;h2 id=&#34;安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;npm install -g hexo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;test.png&#34; alt=&#34;t&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在 node 开发中使用 npm init 会生成一个 pakeage.json 文件，这个文件主要是用来记录这个项目的详细信息的，它会将我们在项目开发中所要用到的包，以及项目的详细信息等记录在这个项目中。&lt;br /&gt;
+ &lt;code&gt;hexo init&lt;/code&gt;  命令可以将该文件夹初始化为 Hexo 根目录&lt;br /&gt;
+ &lt;code&gt;npm install&lt;/code&gt;  命令可以自动安装依赖列表中列出的所有模块&lt;/p&gt;
+&lt;h2 id=&#34;测试&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#测试&#34;&gt;#&lt;/a&gt; 测试&lt;/h2&gt;
+&lt;p&gt;输入命令  &lt;code&gt;hexo s&lt;/code&gt;  启动本地站点&lt;br /&gt;
+在浏览器地址栏中输入 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==&#34;&gt;http://localhost:4000/&lt;/span&gt;， 就可以看到站点在本地运行的结果了&lt;/p&gt;
+&lt;h2 id=&#34;部署github&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署github&#34;&gt;#&lt;/a&gt; 部署 github&lt;/h2&gt;
+&lt;p&gt;GitHub 提供了一项名为 GitHub Pages 的服务，它允许用户自定义项目首页替代默认的源码列表&lt;br /&gt;
+因此，GitHub Pages 可以被认为是由用户编写的、托管在 GitHub 上的静态网页&lt;br /&gt;
+而我们的目的，正是要把用 Hexo 在本地搭建的网站部署到 Github 上，使得站点可以被公共访问&lt;/p&gt;
+&lt;h3 id=&#34;本地配置-个人信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#本地配置-个人信息&#34;&gt;#&lt;/a&gt; 本地配置 个人信息&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config user.name &lt;span class=&#34;token string&#34;&gt;&#34;your-username&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config user.email &lt;span class=&#34;token string&#34;&gt;&#34;your-email-address&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 都有时优先用本地，但全局必须有&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; user.name &lt;span class=&#34;token string&#34;&gt;&#34;your-username&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; user.email &lt;span class=&#34;token string&#34;&gt;&#34;your-email-address&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看配置&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 获取默认配置，如果当前地址中仓库信息不存在，则查看全局，然后再读取系统配置&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--list&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 本地仓库配置 高优先级&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--local&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--list&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 全局用户配置 中优先级&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--list&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 系统配置 低优先级&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--system&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--list&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;安装插件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装插件&#34;&gt;#&lt;/a&gt; 安装插件&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;npm install hexo-deployer-git --save&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;修改配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#修改配置&#34;&gt;#&lt;/a&gt; 修改配置&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;根目录&lt;/strong&gt; 下的  &lt;code&gt;_config.yml&lt;/code&gt;  文件&lt;br /&gt;
+属性与值之间需要留有一个空格&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;deploy&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;repo&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; https&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;//github.com/&amp;lt;git_name&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;/&amp;lt;repositories_name&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;.github.io.git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token comment&#34;&gt;# 设置默认的 main，不然会推到别的仓库去，只有在默认的才能在 xx.io 看到&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;配置ssh&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置ssh&#34;&gt;#&lt;/a&gt; 配置 ssh&lt;/h3&gt;
+&lt;p&gt;进入站点根文件夹，打开 git bash，输入  &lt;code&gt;ssh-keygen -t rsa -C &amp;quot;your_email&amp;quot;&lt;/code&gt;  命令并一路回车获得密钥&lt;br /&gt;
+完成后，根据提示信息中的文件地址  &lt;code&gt;/c/Users/user/.ssh/id_rsa.pub&lt;/code&gt;  找到 id_rsa.pub 文件，复制文件里面的内容。&lt;br /&gt;
+然后 g 在 ithub 设置中添加该 key，测试：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;key.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;更换主题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#更换主题&#34;&gt;#&lt;/a&gt; 更换主题&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIuYWxpeXVuLmNvbS9hcnRpY2xlLzExOTg3NTY/c3BtPWEyYzZoLjI0ODc0NjMyLmV4cGVydC1wcm9maWxlLjMyLjM2Y2E0MDlhS2E0NGM4&#34;&gt;Hexo 系列 (四) NexT 主题配置 - 阿里云开发者社区&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;编译和发布网页&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译和发布网页&#34;&gt;#&lt;/a&gt; 编译和发布网页&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIuYWxpeXVuLmNvbS9hcnRpY2xlLzExOTg3OTY/c3BtPWEyYzZoLjI0ODc0NjMyLmV4cGVydC1wcm9maWxlLjMxLjM2Y2E0MDlhS2E0NGM4&#34;&gt;Hexo 系列 (五) 撰写文章 - 阿里云开发者社区&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;git bash 中输入命令  &lt;code&gt;hexo g&lt;/code&gt;  生成静态文件，输入命令  &lt;code&gt;hexo d&lt;/code&gt;  部署到 Github&lt;br /&gt;
+ 此时，打开 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91c2VybmFtZS5naXRodWIuaW8=&#34;&gt;https://username.github.io&lt;/span&gt; 就可以看见已经部署好的网站了，大功告成&lt;/p&gt;
+&lt;p&gt;期间遇到了一下问题：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;bushu.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;产生原因：一般是这是因为服务器的 SSL 证书没有经过第三方机构的签署，所以才报错&lt;br /&gt;
+解决方法 1：&lt;br /&gt;
+git config --global http.sslVerify &amp;quot;false&amp;quot;&lt;/p&gt;
+&lt;p&gt;解决方法 2：取消 git 的代理&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//取消http代理 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--unset&lt;/span&gt; http.proxy &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//取消https代理 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--unset&lt;/span&gt; https.proxy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;取消 https 代理后 ok&lt;/p&gt;
+&lt;h2 id=&#34;常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用命令&#34;&gt;#&lt;/a&gt; 常用命令&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo clean &lt;span class=&#34;token comment&#34;&gt;#用来清理缓存文件 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo generate &lt;span class=&#34;token comment&#34;&gt;#生成文件 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo server &lt;span class=&#34;token comment&#34;&gt;#运行本地服务器 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo deploy &lt;span class=&#34;token comment&#34;&gt;#上传到服务器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo new &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;paper_name&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#新建文章&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;图片问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片问题&#34;&gt;#&lt;/a&gt; 图片问题&lt;/h2&gt;
+&lt;p&gt;见 [[在 obisidian 上使用]]&lt;/p&gt;
+&lt;p&gt;不中↓&lt;br /&gt;
+参考：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[路径中有空格时，因为markdown需要encode空格的原因，会匹配失败 · Issue #3 · yiyungent/hexo-asset-img · GitHub](https://github.com/yiyungent/hexo-asset-img/issues/3)
+[GitHub - yiyungent/hexo-asset-img: 🍰 Hexo local image plugin. | Hexo 本地图片插件: 转换 图片相对路径 为 asset_img](https://github.com/yiyungent/hexo-asset-img)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装 hexo-asset-img:   &lt;code&gt;npm install hexo-asset-img --save （过时了）&lt;/code&gt; &lt;br /&gt;
+用最新的： &lt;code&gt;npm install git://github.com/yiyungent/hexo-asset-img.git#main&lt;/code&gt; &lt;br /&gt;
+ 在 md 文件目录下创建同名文件夹（添加该模块后 hexo g 也会自动生成）放图片。&lt;br /&gt;
+md 中调用：&lt;/p&gt;
+&lt;figure class=&#34;highlight md&#34;&gt;&lt;figcaption data-lang=&#34;Markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token url&#34;&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;[&lt;span class=&#34;token content&#34;&gt;name&lt;/span&gt;](&lt;span class=&#34;token url&#34;&gt;md_name/pic_name.png&lt;/span&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt; 图片名字和 title 不能有数字，否则会导致图像宽度变成 1，见上面 github 中的第一个 issue。&lt;/p&gt;
+&lt;p&gt;纯 html 格式，能调整大小、位置，但编译成静态资源路径有问题&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;center&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;650px&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;center&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token special-attr&#34;&gt;&lt;span class=&#34;token attr-name&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token value css language-css&#34;&gt;&lt;span class=&#34;token property&#34;&gt;font-size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;token unit&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;token property&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;kaiti&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;token property&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token color&#34;&gt;red&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2024/03/06/hello-world/</guid>
+            <title>Hello World</title>
+            <link>http://example.com/2024/03/06/hello-world/</link>
+            <pubDate>Wed, 06 Mar 2024 16:34:08 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;
+&lt;h3 id=&#34;create-a-new-post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#create-a-new-post&#34;&gt;#&lt;/a&gt; Create a new post&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token string&#34;&gt;&#34;My New Post&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-server&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#run-server&#34;&gt;#&lt;/a&gt; Run server&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;generate-static-files&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#generate-static-files&#34;&gt;#&lt;/a&gt; Generate static files&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;deploy-to-remote-sites&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#deploy-to-remote-sites&#34;&gt;#&lt;/a&gt; Deploy to remote sites&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

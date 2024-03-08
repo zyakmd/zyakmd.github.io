@@ -3,25 +3,25 @@
     <channel>
         <title>Hexo</title>
         <subtitle></subtitle>
-        <icon>http://example.com/images/favicon.ico</icon>
-        <link>http://example.com</link>
+        <icon>https://zyakmd.github.io/images/favicon.ico</icon>
+        <link>https://zyakmd.github.io</link>
         <author>
-          <name>John Doe</name>
+          <name>ZY</name>
         </author>
-        <description></description>
+        <description>行到水穷处，坐看云起时</description>
         <language>en</language>
         <pubDate>Thu, 07 Mar 2024 20:49:38 +0800</pubDate>
         <lastBuildDate>Thu, 07 Mar 2024 20:49:38 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">http://example.com/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F/</guid>
+            <guid isPermalink="true">https://zyakmd.github.io/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F/</guid>
             <title>网站样式</title>
-            <link>http://example.com/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F/</link>
-            <category term="hexo使用" scheme="http://example.com/categories/hexo%E4%BD%BF%E7%94%A8/" />
+            <link>https://zyakmd.github.io/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F/</link>
+            <category term="hexo使用" scheme="https://zyakmd.github.io/categories/hexo%E4%BD%BF%E7%94%A8/" />
             <pubDate>Thu, 07 Mar 2024 20:49:38 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;shoka&lt;/span&gt; 样式，交互爽，好看又不乱，老早就馋了。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;shoka&lt;/span&gt; 样式，交互爽，好看又不乱（该关的还是得关，页面动画看多了腻），老早就馋了。&lt;/p&gt;
 &lt;h1 id=&#34;安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;git clone https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka&lt;/code&gt;&lt;/p&gt;
-&lt;h1 id=&#34;配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置&#34;&gt;#&lt;/a&gt; 配置&lt;/h1&gt;
+&lt;h1 id=&#34;环境&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#环境&#34;&gt;#&lt;/a&gt; 环境&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;卸载掉默认的  &lt;code&gt;hexo-renderer-marked&lt;/code&gt;  (有默认的路径处理，不行就回退)
 &lt;ul&gt;
@@ -40,19 +40,46 @@
 &lt;img data-src=&#34;image-20240307214022436.png&#34; alt=&#34;&#34; /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9waWdwaWdsZXRzZ28uZ2l0aHViLmlvL2hleG8vc2hva2EvJUU5JTg1JThEJUU3JUJEJUFFc2hva2ElRTQlQjglQkIlRTklQTIlOTgv&#34;&gt;https://pigpigletsgo.github.io/hexo/shoka/ 配置 shoka 主题 /&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;后续&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;基本配置&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;界面设置&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbnlmbG92ZS9hcnRpY2xlL2RldGFpbHMvMTA4NzkxOTcw&#34;&gt;https://blog.csdn.net/xinyflove/article/details/108791970&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;遇到了渲染错乱，c、g、s 都没问题，但网页显示一坨。&lt;br /&gt;
+查到有说法是 js-yaml 版本不对，结果一看我都没这个，添加后好了&lt;br /&gt;
+ npm install js-yaml@3.14.1&lt;br /&gt;
+ 还包括 package.json 的替换&lt;/p&gt;
+&lt;h1 id=&#34;基本配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本配置&#34;&gt;#&lt;/a&gt; 基本配置&lt;/h1&gt;
+&lt;p&gt;包含哪些插件和设置见：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;基本配置&lt;/span&gt;&lt;br /&gt;
+唯一要注意的文中推荐 theme 下自定义_config.[theme].yml 配置文件&lt;br /&gt;
+官网也说：Hexo 在合并主题配置时，Hexo 配置文件中的 theme_config 的优先级最高，其次是_config.[theme].yml 文件，最后是位于主题目录下的_config.yml. 然而_config.[theme].&lt;/p&gt;
+&lt;p&gt;然而 theme 下_config.[theme].yml 并没有覆盖_config.yml。最终还是都写在了_config.yml 中&lt;/p&gt;
+&lt;h1 id=&#34;界面配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#界面配置&#34;&gt;#&lt;/a&gt; 界面配置&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;界面设置&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;搜索功能&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搜索功能&#34;&gt;#&lt;/a&gt; 搜索功能&lt;/h1&gt;
+&lt;p&gt;按默认的&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# Algolia Search 搜索功能&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# For more information: https://www.algolia.com&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;search&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  hits&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    per_page&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;还需要注册 algolia（mark：我用 GitHub 注册的）并配置相关设置（algolia 提供给个人用户上限 1 万条索引记录和每月 1 万次的搜索次数）&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTczNDA0L2FydGljbGUvZGV0YWlscy8xMjI4NjEzMjE=&#34;&gt;配置参考&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jbG91ZC50ZW5jZW50LmNvbS9kZXZlbG9wZXIvYXJ0aWNsZS8xOTM0MjE5&#34;&gt;参考&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;更新： &lt;code&gt;hexo algolia&lt;/code&gt; &lt;br /&gt;
+ 如下图就是成功了&lt;br /&gt;
+&lt;img data-src=&#34;image-20240308194948129.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;image-20240308195058606.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;站内跳转&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#站内跳转&#34;&gt;#&lt;/a&gt; 站内跳转&lt;/h1&gt;
+&lt;p&gt;官方有标签插件实现站内文章链接，如下：&lt;br /&gt;
+ &lt;code&gt;&amp;#123;% post_link &#39;hexo blog&#39; %&amp;#125;&lt;/code&gt; &lt;br /&gt;
+ 样例： &lt;code&gt;&amp;#123;% post_link hexo使用/在obisidian上使用 &#39;在obisidian上使用&#39; %&amp;#125;&lt;/code&gt;  要用相对路径&lt;br /&gt;
+这儿优先使用文章 Front-matter 中的 &lt;code&gt;permalink&lt;/code&gt;  字段，如果没有  &lt;code&gt;permalink&lt;/code&gt;  ，则使用  &lt;code&gt;文件名字&lt;/code&gt; ！&lt;/p&gt;
+&lt;p&gt;官方文档还有一个  &lt;code&gt;post_path&lt;/code&gt;  ，用于获取文章路径，结合 markdown 内置的链接方式，即可实现锚点超链接，如下：（这个一直没成，站内就用 post_link 了，外链用 &lt;code&gt;[]()&lt;/code&gt; ）&lt;br /&gt;
+ &lt;code&gt;[hexo 安装](&amp;#123;% post_path &#39;hexo blog&#39; %&amp;#125;#安装)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;也可以使用 html a 标签实现，如下：&lt;br /&gt;
+ &lt;code&gt;&amp;lt;a href=&amp;quot;&amp;#123;% post_path &#39;hexo blog&#39; %&amp;#125;#安装&amp;quot;&amp;gt;hexo 安装&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;评论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#评论&#34;&gt;#&lt;/a&gt; 评论&lt;/h1&gt;
+&lt;p&gt;还没考虑&lt;/p&gt;
+&lt;h1 id=&#34;图库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图库&#34;&gt;#&lt;/a&gt; 图库&lt;/h1&gt;
+&lt;p&gt;说是：&amp;lt;root&amp;gt;/themes/shoka/_images.yml  会被 &amp;lt;root&amp;gt;/source/_data/images.yml 代替 (至少要有六个覆盖默认的列表) 。发现也并没，也可能是我的链接未生效，再看 ing&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E5%9C%A8obisidian%E4%B8%8A%E4%BD%BF%E7%94%A8/</guid>
+            <guid isPermalink="true">https://zyakmd.github.io/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E5%9C%A8obisidian%E4%B8%8A%E4%BD%BF%E7%94%A8/</guid>
             <title>在obisidian上使用</title>
-            <link>http://example.com/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E5%9C%A8obisidian%E4%B8%8A%E4%BD%BF%E7%94%A8/</link>
-            <category term="hexo使用" scheme="http://example.com/categories/hexo%E4%BD%BF%E7%94%A8/" />
+            <link>https://zyakmd.github.io/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E5%9C%A8obisidian%E4%B8%8A%E4%BD%BF%E7%94%A8/</link>
+            <category term="hexo使用" scheme="https://zyakmd.github.io/categories/hexo%E4%BD%BF%E7%94%A8/" />
             <pubDate>Thu, 07 Mar 2024 16:44:47 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;参考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81NTQzMzM4MDU=&#34;&gt;Obsidian+Git 完美维护 Hexo 博客 - 知乎&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;模板&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模板&#34;&gt;#&lt;/a&gt; 模板&lt;/h1&gt;
@@ -89,14 +116,14 @@ A：但好像可以&lt;/p&gt;
 _config 设置这两个。&lt;/p&gt;
 &lt;figure class=&#34;highlight yaml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;marked&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;prependRoot&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;postAsset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token boolean important&#34;&gt;true&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;image-20240307202119236.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;文内链接&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文内链接&#34;&gt;#&lt;/a&gt; 文内链接&lt;/h1&gt;
-&lt;p&gt;obisidian 的双向链接 [[]] 怎么处理，只能换成&lt;/p&gt;
+&lt;p&gt;见 &lt;a href=&#34;/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F/&#34; title=&#34;网站样式&#34;&gt;网站样式&lt;/a&gt; 的站内跳转&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2024/03/06/hexo%E4%BD%BF%E7%94%A8/hexo+github/</guid>
+            <guid isPermalink="true">https://zyakmd.github.io/2024/03/06/hexo%E4%BD%BF%E7%94%A8/hexo+github/</guid>
             <title>hexo + github 博客搭建</title>
-            <link>http://example.com/2024/03/06/hexo%E4%BD%BF%E7%94%A8/hexo+github/</link>
-            <category term="hexo使用" scheme="http://example.com/categories/hexo%E4%BD%BF%E7%94%A8/" />
+            <link>https://zyakmd.github.io/2024/03/06/hexo%E4%BD%BF%E7%94%A8/hexo+github/</link>
+            <category term="hexo使用" scheme="https://zyakmd.github.io/categories/hexo%E4%BD%BF%E7%94%A8/" />
             <pubDate>Wed, 06 Mar 2024 19:57:31 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;Hexo 是一个快速、简洁且高效的 &lt;strong&gt;博客框架&lt;/strong&gt;。它使用 Markdown（或其他渲染引擎）解析文章，在数秒内，即可使用靓丽的主题生成静态网页&lt;br /&gt;
@@ -147,21 +174,21 @@ _config 设置这两个。&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXIuYWxpeXVuLmNvbS9hcnRpY2xlLzExOTg3OTY/c3BtPWEyYzZoLjI0ODc0NjMyLmV4cGVydC1wcm9maWxlLjMxLjM2Y2E0MDlhS2E0NGM4&#34;&gt;Hexo 系列 (五) 撰写文章 - 阿里云开发者社区&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;git bash 中输入命令  &lt;code&gt;hexo g&lt;/code&gt;  生成静态文件，输入命令  &lt;code&gt;hexo d&lt;/code&gt;  部署到 Github&lt;br /&gt;
  此时，打开 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly91c2VybmFtZS5naXRodWIuaW8=&#34;&gt;https://username.github.io&lt;/span&gt; 就可以看见已经部署好的网站了，大功告成&lt;/p&gt;
-&lt;p&gt;期间遇到了一下问题：&lt;/p&gt;
+&lt;p&gt;期间遇到了以下问题：&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;bushu.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;产生原因：一般是这是因为服务器的 SSL 证书没有经过第三方机构的签署，所以才报错&lt;br /&gt;
-解决方法 1：&lt;br /&gt;
+&lt;p&gt;产生原因：一般是因为服务器的 SSL 证书没有经过第三方机构的签署，所以才报错&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方法 1：&lt;/strong&gt;&lt;br /&gt;
 git config --global http.sslVerify &amp;quot;false&amp;quot;&lt;/p&gt;
-&lt;p&gt;解决方法 2：取消 git 的代理&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//取消http代理 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--unset&lt;/span&gt; http.proxy &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//取消https代理 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--unset&lt;/span&gt; https.proxy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;取消 https 代理后 ok&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;解决方法 2：&lt;/strong&gt; 取消 git 的代理&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//取消http代理 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--unset&lt;/span&gt; http.proxy &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//取消https代理 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; config &lt;span class=&#34;token parameter variable&#34;&gt;--global&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--unset&lt;/span&gt; https.proxy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;取消 https 代理后 + 科学上网 ok&lt;/p&gt;
 &lt;h2 id=&#34;常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#常用命令&#34;&gt;#&lt;/a&gt; 常用命令&lt;/h2&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo clean &lt;span class=&#34;token comment&#34;&gt;#用来清理缓存文件 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo generate &lt;span class=&#34;token comment&#34;&gt;#生成文件 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo server &lt;span class=&#34;token comment&#34;&gt;#运行本地服务器 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo deploy &lt;span class=&#34;token comment&#34;&gt;#上传到服务器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo new &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;paper_name&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#新建文章&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;图片问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图片问题&#34;&gt;#&lt;/a&gt; 图片问题&lt;/h2&gt;
-&lt;p&gt;见 [[在 obisidian 上使用]]&lt;/p&gt;
-&lt;p&gt;不中↓&lt;br /&gt;
+&lt;p&gt;最终方案见&lt;br /&gt;
+ &lt;a href=&#34;/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E5%9C%A8obisidian%E4%B8%8A%E4%BD%BF%E7%94%A8/&#34; title=&#34;在obisidian上使用&#34;&gt;在obisidian上使用&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一开始用的，但问题多多↓&lt;br /&gt;
 参考：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[路径中有空格时，因为markdown需要encode空格的原因，会匹配失败 · Issue #3 · yiyungent/hexo-asset-img · GitHub](https://github.com/yiyungent/hexo-asset-img/issues/3)
-[GitHub - yiyungent/hexo-asset-img: 🍰 Hexo local image plugin. | Hexo 本地图片插件: 转换 图片相对路径 为 asset_img](https://github.com/yiyungent/hexo-asset-img)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3lpeXVuZ2VudC9oZXhvLWFzc2V0LWltZy9pc3N1ZXMvMw==&#34;&gt;路径中有空格时，因为 markdown 需要 encode 空格的原因，会匹配失败・Issue #3・yiyungent/hexo-asset-img・GitHub&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3lpeXVuZ2VudC9oZXhvLWFzc2V0LWltZw==&#34;&gt;GitHub - yiyungent/hexo-asset-img: 🍰 Hexo local image plugin. | Hexo 本地图片插件：转换 图片相对路径 为 asset_img&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;安装 hexo-asset-img:   &lt;code&gt;npm install hexo-asset-img --save （过时了）&lt;/code&gt; &lt;br /&gt;
 用最新的： &lt;code&gt;npm install git://github.com/yiyungent/hexo-asset-img.git#main&lt;/code&gt; &lt;br /&gt;
  在 md 文件目录下创建同名文件夹（添加该模块后 hexo g 也会自动生成）放图片。&lt;br /&gt;
@@ -171,9 +198,9 @@ md 中调用：&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;figcaption data-lang=&#34;HTML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;center&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;650px&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt; &lt;span class=&#34;token attr-name&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;center&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token special-attr&#34;&gt;&lt;span class=&#34;token attr-name&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token punctuation attr-equals&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;span class=&#34;token value css language-css&#34;&gt;&lt;span class=&#34;token property&#34;&gt;font-size&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;token unit&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;token property&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;kaiti&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;token property&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;token color&#34;&gt;red&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&#39;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token tag&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2024/03/06/hello-world/</guid>
+            <guid isPermalink="true">https://zyakmd.github.io/2024/03/06/hello-world/</guid>
             <title>Hello World</title>
-            <link>http://example.com/2024/03/06/hello-world/</link>
+            <link>https://zyakmd.github.io/2024/03/06/hello-world/</link>
             <pubDate>Wed, 06 Mar 2024 16:34:08 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;quick-start&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#quick-start&#34;&gt;#&lt;/a&gt; Quick Start&lt;/h2&gt;

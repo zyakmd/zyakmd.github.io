@@ -69,10 +69,15 @@
  &lt;code&gt;[hexo 安装](&amp;#123;% post_path &#39;hexo blog&#39; %&amp;#125;#安装)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;也可以使用 html a 标签实现，如下：&lt;br /&gt;
  &lt;code&gt;&amp;lt;a href=&amp;quot;&amp;#123;% post_path &#39;hexo blog&#39; %&amp;#125;#安装&amp;quot;&amp;gt;hexo 安装&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;页内标题跳转&lt;br /&gt;
+ &lt;code&gt;[](#标题名)&lt;/code&gt; &lt;br /&gt;
+ 样例：&lt;a href=&#34;#%E7%8E%AF%E5%A2%83&#34;&gt;环境&lt;/a&gt;  ，实现 md &lt;code&gt;[环境](#环境)&lt;/code&gt;&lt;/p&gt;
 &lt;h1 id=&#34;评论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#评论&#34;&gt;#&lt;/a&gt; 评论&lt;/h1&gt;
 &lt;p&gt;还没考虑&lt;/p&gt;
 &lt;h1 id=&#34;图库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图库&#34;&gt;#&lt;/a&gt; 图库&lt;/h1&gt;
-&lt;p&gt;说是：&amp;lt;root&amp;gt;/themes/shoka/_images.yml  会被 &amp;lt;root&amp;gt;/source/_data/images.yml 代替 (至少要有六个覆盖默认的列表) 。发现也并没，也可能是我的链接未生效，再看 ing&lt;/p&gt;
+&lt;p&gt;说是：/themes/shoka/_images.yml  会被 /source/_data/images.yml 代替 (至少要有六个覆盖默认的列表) 。发现也并没，也可能是我的链接未生效，再看 ing&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmppeGlhb2IuY24vP3Bvc3Q9OTM=&#34;&gt;随机图床集合&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90Lm13bS5tb2Uv&#34;&gt;随机二次元图床&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>

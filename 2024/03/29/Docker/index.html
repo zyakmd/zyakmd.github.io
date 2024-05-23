@@ -1,5 +1,26 @@
-<!-- build time:Wed May 22 2024 20:39:47 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><link rel="alternate" type="application/rss+xml" title="世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它" href="https://zyakmd.github.io/rss.xml"><link rel="alternate" type="application/atom+xml" title="世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它" href="https://zyakmd.github.io/atom.xml"><link rel="alternate" type="application/json" title="世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它" href="https://zyakmd.github.io/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><link rel="canonical" href="https://zyakmd.github.io/2024/03/29/Docker/"><title>Docker | ZY Blog = 世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它</title><meta name="generator" content="Hexo 5.4.2"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">Docker</h1><div class="meta"><span class="item" title="Created: 2024-03-29 20:10:52"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">Posted on</span> <time itemprop="dateCreated datePublished" datetime="2024-03-29T20:10:52+08:00">2024-03-29</time> </span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i> </span><span class="text">Symbols count in article</span> <span>1.8k</span> <span class="text">words</span> </span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i> </span><span class="text">Reading time</span> <span>2 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">ZY Blog</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><ul><li class="item" data-background-image="https://t.mwm.moe/fj?243281"></li><li class="item" data-background-image="https://t.mwm.moe/fj?538254"></li><li class="item" data-background-image="https://t.mwm.moe/fj?789681"></li><li class="item" data-background-image="https://t.mwm.moe/fj?238223"></li><li class="item" data-background-image="https://t.mwm.moe/fj?619319"></li><li class="item" data-background-image="https://t.mwm.moe/fj?389170"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"/><use xlink:href="#gentle-wave" x="48" y="3"/><use xlink:href="#gentle-wave" x="48" y="5"/><use xlink:href="#gentle-wave" x="48" y="7"/></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">Home</a></span></div><article itemscope itemtype="http://schema.org/Article" class="post block" lang="en"><link itemprop="mainEntityOfPage" href="https://zyakmd.github.io/2024/03/29/Docker/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.jpg"><meta itemprop="name" content="ZY"><meta itemprop="description" content=", 行到水穷处，坐看云起时"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它"></span><div class="body md" itemprop="articleBody"><p>听了很久了，上下手</p><p>Docker 是一个用于开发，交付和运行应用程序的开放平台。Docker 使您能够将应用程序与基础架构分开，从而可以快速交付软件。借助 Docker，您可以与管理应用程序相同的方式来管理基础架构。通过利用 Docker 的方法来快速交付，测试和部署代码，您可以大大减少编写代码和在生产环境中运行代码之间的延迟。</p><h1 id="引入"><a class="anchor" href="#引入">#</a> 引入</h1><p>一款产品： 开发–上线 两套环境！应用环境，应用配置！<br>开发 — 运维。 问题：我在我的电脑上可以允许！版本更新，导致服务不可用！对于运维来说考验十分大？<br>环境配置是十分的麻烦，每一个机器都要部署环境 (集群 Redis、ES、Hadoop…) ! 费事费力。<br>发布一个项目 (jar + (Redis MySQL JDK ES) )，项目能不能带上环境安装打包！<br>之前在服务器配置一个应用的环境 Redis、MySQL、JDK、ES、Hadoop 配置超麻烦了，不能够跨平台。开发环境 Windows，最后发布到 Linux！<br>传统：开发 jar，运维来做！<br>现在：开发打包部署上线，一套流程做完！<br>安卓流程：java — apk — 发布（应用商店）—- 张三使用 apk 一安装即可用！<br>docker 流程： java-jar（环境） — 打包项目带上环境（镜像） — ( Docker 仓库：商店）——- 下载我们发布的镜像 —- 直接运行即可！<br>Docker 给以上的问题，提出了解决方案，其思想就来自于集装箱！<br>JRE – 多个应用 (端口冲突) – 原来都是交叉的！<br>隔离：Docker 核心思想！打包装箱！每个箱子是互相隔离的。<br>Docker 通过隔离机制，可以将服务器利用到极致！<br><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80NDI0NDI5OTc=">https://zhuanlan.zhihu.com/p/442442997</span></p><h1 id="安装"><a class="anchor" href="#安装">#</a> 安装</h1><ol><li>配置 yam</li></ol><figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> yum-utils</pre></td></tr><tr><td data-num="2"></td><td><pre>yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</pre></td></tr></table></figure><ol start="2"><li>安装</li></ol><pre><code class="language-Bash">yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+<!-- build time:Thu May 23 2024 20:05:58 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><link rel="alternate" type="application/rss+xml" title="世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它" href="https://zyakmd.github.io/rss.xml"><link rel="alternate" type="application/atom+xml" title="世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它" href="https://zyakmd.github.io/atom.xml"><link rel="alternate" type="application/json" title="世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它" href="https://zyakmd.github.io/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><link rel="canonical" href="https://zyakmd.github.io/2024/03/29/Docker/"><title>Docker | ZY Blog = 世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它</title><meta name="generator" content="Hexo 5.4.2"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">Docker</h1><div class="meta"><span class="item" title="Created: 2024-03-29 20:10:52"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">Posted on</span> <time itemprop="dateCreated datePublished" datetime="2024-03-29T20:10:52+08:00">2024-03-29</time> </span><span class="item" title="Symbols count in article"><span class="icon"><i class="ic i-pen"></i> </span><span class="text">Symbols count in article</span> <span>13k</span> <span class="text">words</span> </span><span class="item" title="Reading time"><span class="icon"><i class="ic i-clock"></i> </span><span class="text">Reading time</span> <span>12 mins.</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="Toggle navigation bar"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">ZY Blog</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><ul><li class="item" data-background-image="https://t.mwm.moe/fj?704176"></li><li class="item" data-background-image="https://t.mwm.moe/fj?603742"></li><li class="item" data-background-image="https://t.mwm.moe/fj?710214"></li><li class="item" data-background-image="https://t.mwm.moe/fj?468808"></li><li class="item" data-background-image="https://t.mwm.moe/fj?518185"></li><li class="item" data-background-image="https://t.mwm.moe/fj?943371"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"/><use xlink:href="#gentle-wave" x="48" y="3"/><use xlink:href="#gentle-wave" x="48" y="5"/><use xlink:href="#gentle-wave" x="48" y="7"/></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">Home</a></span></div><article itemscope itemtype="http://schema.org/Article" class="post block" lang="en"><link itemprop="mainEntityOfPage" href="https://zyakmd.github.io/2024/03/29/Docker/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.jpg"><meta itemprop="name" content="ZY"><meta itemprop="description" content=", 行到水穷处，坐看云起时"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它"></span><div class="body md" itemprop="articleBody"><p>听了很久了，上下手</p><p>Docker 是一个用于开发，交付和运行应用程序的开放平台。Docker 使您能够将应用程序与基础架构分开，从而可以快速交付软件。借助 Docker，您可以与管理应用程序相同的方式来管理基础架构。通过利用 Docker 的方法来快速交付，测试和部署代码，您可以大大减少编写代码和在生产环境中运行代码之间的延迟。</p><h1 id="引入"><a class="anchor" href="#引入">#</a> 引入</h1><p>一款产品： 开发–上线 两套环境！应用环境，应用配置！<br>开发 — 运维。 问题：我在我的电脑上可以允许！版本更新，导致服务不可用！对于运维来说考验十分大？<br>环境配置是十分的麻烦，每一个机器都要部署环境 (集群 Redis、ES、Hadoop…) ! 费事费力。<br>发布一个项目 (jar + (Redis MySQL JDK ES) )，项目能不能带上环境安装打包！<br>之前在服务器配置一个应用的环境 Redis、MySQL、JDK、ES、Hadoop 配置超麻烦了，不能够跨平台。开发环境 Windows，最后发布到 Linux！<br>传统：开发 jar，运维来做！<br>现在：开发打包部署上线，一套流程做完！<br>安卓流程：java — apk — 发布（应用商店）—- 张三使用 apk 一安装即可用！<br>docker 流程： java-jar（环境） — 打包项目带上环境（镜像） — ( Docker 仓库：商店）——- 下载我们发布的镜像 —- 直接运行即可！<br>Docker 给以上的问题，提出了解决方案，其思想就来自于集装箱！<br>JRE – 多个应用 (端口冲突) – 原来都是交叉的！<br>隔离：Docker 核心思想！打包装箱！每个箱子是互相隔离的。<br>Docker 通过隔离机制，可以将服务器利用到极致！<br><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80NDI0NDI5OTc=">https://zhuanlan.zhihu.com/p/442442997</span></p><h1 id="安装"><a class="anchor" href="#安装">#</a> 安装</h1><p><span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8=">docker hub</span></p><ol><li>配置 yam</li></ol><figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> yum-utils</pre></td></tr><tr><td data-num="2"></td><td><pre>yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</pre></td></tr></table></figure><ol start="2"><li>安装</li></ol><pre><code class="language-Bash">yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 </code></pre><ol start="3"><li>校验 (指令)</li></ol><pre><code class="language-Bash"># 启动Docker
+systemctl start docker
+
+# 测试
+docker run hello-world
+
+# 停止Docker
+systemctl stop docker
+</code></pre><ol start="4"><li>镜像加速（阿里云为例子，在 控制台：产品与服务 -&gt; 容器 -&gt; 镜像工具里）</li></ol><pre><code>sudo mkdir -p /etc/docker 
+sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF' &#123; 
+&quot;registry-mirrors&quot;: [&quot;https://xxxx.mirror.aliyuncs.com&quot;] 
+&#125; 
+EOF 
+sudo systemctl daemon-reload 
+sudo systemctl restart docker
+</code></pre><h1 id="使用"><a class="anchor" href="#使用">#</a> 使用</h1><ul><li>docker 官方有个镜像仓库（<span class="exturl" data-url="aHR0cDovL2h1Yi5kb2NrZXIuY29t">hub.docker.com</span> 虽然现在更多是软件官方维护自己的），里面提供镜像（包括软件及其依赖环境，好比绿色免安装版），pull 下来后可以独立的运行各个镜像（容器）</li><li>在启动后，其实就是开了个 docker 的守护进程，等待命令。run 之后，就会从指定的仓库（默认或者设置的镜像地址）去拉取。便运行（不用重复拉取），可被重复部署（一台机器成集群都行）</li></ul><p>MySQL 为例子</p><pre><code class="language-PowerShell">docker run -d \
+  --name mysql \
+  -p 3306:3306 \
+  -e TZ=Asia/Shanghai \
+  -e MYSQL_ROOT_PASSWORD=123 \
+  mysql
+</code></pre><h2 id="命令"><a class="anchor" href="#命令">#</a> 命令</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9jbGkv">官网指南</span></p><pre><code class="language-Bash"># 启动Docker
 systemctl start docker
 
 # 测试
@@ -13,6 +34,9 @@ systemctl restart docker
 
 # 设置开机自启
 systemctl enable docker
+
+# Docker容器开机自启
+docker update --restart=always [容器名/容器id]
 
 # 执行docker ps命令，如果不报错，说明安装启动成功
 docker ps
@@ -29,17 +53,272 @@ systemctl stop/start docker.socket
 
 # 查看运行的容器
 docker ps
-</code></pre><ol start="4"><li>镜像加速（阿里云为例子，在 控制台：产品与服务 -&gt; 容器 -&gt; 镜像工具里）</li></ol><pre><code>sudo mkdir -p /etc/docker 
-sudo tee /etc/docker/daemon.json &lt;&lt;-'EOF' &#123; 
-&quot;registry-mirrors&quot;: [&quot;https://xxxx.mirror.aliyuncs.com&quot;] 
-&#125; 
-EOF 
-sudo systemctl daemon-reload 
-sudo systemctl restart docker
-</code></pre><h1 id="使用"><a class="anchor" href="#使用">#</a> 使用</h1><ul><li>docker 官方有个镜像仓库（<span class="exturl" data-url="aHR0cDovL2h1Yi5kb2NrZXIuY29t">hub.docker.com</span> 虽然现在更多是软件官方维护自己的），里面提供镜像（包括软件及其依赖环境，好比绿色免安装版），pull 下来后可以独立的运行各个镜像（容器）</li><li>在启动后，其实就是开了个 docker 的守护进程，等待命令。run 之后，就会从指定的仓库（默认或者设置的镜像地址）去拉取。便运行（不用重复拉取），可被重复部署（一台机器成集群都行）</li></ul><p>MySQL 为例子</p><pre><code class="language-PowerShell">docker run -d \
+
+# 查看具体的属性（容器、卷等）
+docker inspect 容器名
+docker volume inspect 卷名
+</code></pre><table><thead><tr><th><strong>命令</strong></th><th><strong>说明</strong></th><th><strong>文档地址</strong></th></tr></thead><tbody><tr><td>docker pull</td><td>拉取镜像</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9wdWxsLw==">docker pull</span></td></tr><tr><td>docker push</td><td>推送镜像到 DockerRegistry</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9wdXNoLw==">docker push</span></td></tr><tr><td>docker images</td><td>查看本地镜像</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9pbWFnZXMv">docker images</span></td></tr><tr><td>docker rmi</td><td>删除本地镜像</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9ybWkv">docker rmi</span></td></tr><tr><td>docker run</td><td>创建并运行容器（不能重复创建）</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9ydW4v">docker run</span></td></tr><tr><td>docker stop</td><td>停止指定容器</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9zdG9wLw==">docker stop</span></td></tr><tr><td>docker start</td><td>启动指定容器</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9zdGFydC8=">docker start</span></td></tr><tr><td>docker restart</td><td>重新启动容器</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9yZXN0YXJ0Lw==">docker restart</span></td></tr><tr><td>docker rm</td><td>删除指定容器</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9ybS8=">docs.docker.com</span></td></tr><tr><td>docker ps</td><td>查看容器</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9wcy8=">docker ps</span></td></tr><tr><td>docker logs</td><td>查看容器运行日志</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9sb2dzLw==">docker logs</span></td></tr><tr><td>docker exec</td><td>进入容器</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9leGVjLw==">docker exec</span></td></tr><tr><td>docker save</td><td>保存镜像到本地压缩文件</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9zYXZlLw==">docker save</span></td></tr><tr><td>docker load</td><td>加载本地压缩文件到镜像</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9sb2FkLw==">docker load</span></td></tr><tr><td>docker inspect</td><td>查看容器详细信息</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9pbnNwZWN0Lw==">docker inspect</span></td></tr></tbody></table><h2 id="命令解读"><a class="anchor" href="#命令解读">#</a> 命令解读</h2><pre><code class="language-PowerShell">docker run -d \
+  --name mysql \
+  -p 3305:3306 \
+  -e TZ=Asia/Shanghai \
+  -e MYSQL_ROOT_PASSWORD=123 \
+  mysql
+</code></pre><blockquote><p>解读：</p><ul><li><p><code>docker run -d</code> ：创建并运行一个容器， <code>-d</code> 则是让容器以后台进程运行</p></li><li><p><code>--name</code> <code>mysql</code> : 给容器起个名字叫 <code>mysql</code> ，你可以叫别的</p></li><li><p><code>-p 3305:3306</code> : 设置端口映射。</p><ul><li><p><strong>容器是隔离环境</strong>，外界不可访问。但是可以<strong>将宿主机端口映射容器内到端口</strong>，当访问宿主机指定端口时，就是在访问容器内的端口了。（如宿主机 ip：192.168.0.1 (即你服务器的 ip，可以直接访问)，容器会有独立的 ip，如 192.168.0.2 (无法被直接访问)，此时就需要端口映射来访问容器）</p></li><li><p>容器内端口往往是由容器内的进程决定，例如 MySQL 进程默认端口是 3306，因此容器内端口一定是 3306；而宿主机端口则可以任意指定，一般与容器内保持一致。</p></li><li><p>格式： <code>-p 宿主机端口:容器内端口</code> ，示例中就是将宿主机的 3306 映射到容器内的 3306 端口</p></li></ul></li><li><p><code>-e</code> <code>TZ=Asia/Shanghai</code> : 配置容器内进程运行时的一些参数，该参数要看官方设定</p><ul><li><p>格式： <code>-e KEY=VALUE</code> ，KEY 和 VALUE 都由容器内进程决定</p></li><li><p>案例中， <code>TZ=Asia/Shanghai</code> 是设置时区； <code>MYSQL_ROOT_PASSWORD=123</code> 是设置 MySQL 默认密码</p></li></ul></li><li><p><code>mysql</code> : 设置<strong>镜像</strong>名称，Docker 会根据这个名字搜索并下载镜像</p><ul><li><p>格式： <code>REPOSITORY:TAG</code> ，例如 <code>mysql:8.0</code> ，其中 <code>REPOSITORY</code> 可以理解为镜像名， <code>TAG</code> 是版本号</p></li><li><p>在未指定 <code>TAG</code> 的情况下，默认是最新版本，也就是 <code>mysql:latest</code></p></li></ul></li></ul></blockquote><pre><code class="language-PowerShell"># 第1步，去DockerHub查看nginx镜像仓库及相关信息
+
+# 第2步，拉取Nginx镜像
+docker pull nginx
+
+# 第3步，查看镜像
+docker images
+# 结果如下：
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+nginx        latest    605c77e624dd   16 months ago   141MB
+mysql        latest    3218b38490ce   17 months ago   516MB
+
+# 第4步，创建并允许Nginx容器
+docker run -d --name nginx -p 80:80 nginx
+
+# 第5步，查看运行中容器
+docker ps
+# 也可以加格式化方式访问，格式会更加清爽
+docker ps --format &quot;table &#123;&#123;.ID&#125;&#125;\t&#123;&#123;.Image&#125;&#125;\t&#123;&#123;.Ports&#125;&#125;\t&#123;&#123;.Status&#125;&#125;\t&#123;&#123;.Names&#125;&#125;&quot;
+
+# 第6步，访问网页，地址：http://虚拟机地址
+
+# 第7步，停止容器
+docker stop nginx
+
+# 第8步，查看所有容器
+docker ps -a --format &quot;table &#123;&#123;.ID&#125;&#125;\t&#123;&#123;.Image&#125;&#125;\t&#123;&#123;.Ports&#125;&#125;\t&#123;&#123;.Status&#125;&#125;\t&#123;&#123;.Names&#125;&#125;&quot;
+
+# 第9步，再次启动nginx容器
+docker start nginx
+
+# 第10步，再次查看容器
+docker ps --format &quot;table &#123;&#123;.ID&#125;&#125;\t&#123;&#123;.Image&#125;&#125;\t&#123;&#123;.Ports&#125;&#125;\t&#123;&#123;.Status&#125;&#125;\t&#123;&#123;.Names&#125;&#125;&quot;
+
+# 第11步，查看容器详细信息
+docker inspect nginx
+
+# 第12步，进入容器,查看容器内目录
+docker exec -it nginx bash
+# 或者，可以进入MySQL
+docker exec -it mysql mysql -uroot -p
+
+# 第13步，删除容器
+docker rm nginx
+# 发现无法删除，因为容器运行中，强制删除容器
+docker rm -f nginx
+</code></pre><p>镜像的名称不是随意的，而是要到 DockerRegistry 中寻找，镜像运行时的配置也不是随意的，要参考镜像的帮助文档，这些在<span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8="> DockerHub 网站</span>或者软件的官方网站中都能找到。</p><p>如果我们要安装其它软件，也可以到 DockerRegistry 中寻找对应的镜像名称和版本，阅读相关配置即可。</p><h2 id="linux别名"><a class="anchor" href="#linux别名">#</a> Linux 别名</h2><p><code>docker ps --format &quot;table &#123;&#123;.ID&#125;&#125;\t&#123;&#123;.Image&#125;&#125;\t&#123;&#123;.Ports&#125;&#125;\t&#123;&#123;.Status&#125;&#125;\t&#123;&#123;.Names&#125;&#125;&quot;</code> 太麻烦了，</p><pre><code class="language-PowerShell"># 修改/root/.bashrc文件
+vi /root/.bashrc
+内容如下：
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias dps='docker ps --format &quot;table &#123;&#123;.ID&#125;&#125;\t&#123;&#123;.Image&#125;&#125;\t&#123;&#123;.Ports&#125;&#125;\t&#123;&#123;.Status&#125;&#125;\t&#123;&#123;.Names&#125;&#125;&quot;'
+alias dis='docker images'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+</code></pre><p><code>source /root/.bashrc</code> 生效</p><h1 id="数据卷"><a class="anchor" href="#数据卷">#</a> 数据卷</h1><p>容器是隔离环境，容器内程序的文件、配置、运行时产生的容器都在容器内部</p><ul><li>如果要升级 MySQL 版本，需要销毁旧容器，那么数据岂不是跟着被销毁了？</li><li>MySQL、Nginx 容器运行后，如果我要修改其中的某些配置该怎么办？</li><li>我想要让 Nginx 代理我的静态资源怎么办？</li></ul><p>因此，容器提供程序的运行环境，但是程序运行产生的数据、程序运行依赖的配置都应该与容器<strong>解耦</strong>。</p><p><strong>数据卷（volume）</strong> 是一个虚拟目录，是<strong>容器内目录</strong>与<strong>宿主机 **** 目录</strong>之间映射的桥梁。</p><p>以 Nginx 为例，我们知道 Nginx 中有两个关键的目录：</p><ul><li><code>html</code> ：放置一些静态资源</li><li><code>conf</code> ：放置配置文件</li></ul><p>如果我们要让 Nginx 代理我们的静态资源，最好是放到 <code>html</code> 目录；如果我们要修改 Nginx 的配置，最好是找到 <code>conf</code> 下的 <code>nginx.conf</code> 文件。</p><p>但遗憾的是，容器运行的 Nginx 所有的文件都在容器内部。所以我们必须利用数据卷将两个目录与宿主机目录关联，方便我们操作。如图：<br><img data-src="image-20240523160225133.png" alt=""></p><p>在上图中：</p><ul><li><p>我们创建了两个数据卷： <code>conf</code> 、 <code>html</code></p></li><li><p>Nginx 容器内部的 <code>conf</code> 目录和 <code>html</code> 目录分别与两个数据卷关联。</p></li><li><p>而数据卷 conf 和 html 分别指向了宿主机的 <code>/var/lib/docker/volumes/conf/_data</code> 目录和 <code>/var/lib/docker/volumes/html/_data</code> 目录</p></li></ul><p>这样以来，容器内的 <code>conf</code> 和 <code>html</code> 目录就 与宿主机的 <code>conf</code> 和 <code>html</code> 目录关联起来，我们称为<strong>挂载</strong>。此时，我们操作宿主机的 <code>/var/lib/docker/volumes/html/_data</code> 就是在操作容器内的 <code>/usr/share/nginx/html/_data</code> 目录。只要我们将静态资源放入宿主机对应目录，就可以被 Nginx 代理了。</p><div class="note info no-icon"><p><code>/var/lib/docker/volumes</code> 这个目录就是默认的存放所有容器数据卷的目录，其下再根据数据卷名称创建新目录，格式为 <code>/数据卷名/_data</code> 。</p><p><strong>为什么不让容器目录直接指向<strong><strong>宿主机</strong></strong>目录呢</strong>？</p><ul><li>因为直接指向宿主机目录就与宿主机强耦合了，如果切换了环境，宿主机目录就可能发生改变了。由于容器一旦创建，目录挂载就无法修改，这样容器就无法正常工作了。</li><li>但是容器指向数据卷，一个逻辑名称，而数据卷再指向宿主机目录，就不存在强耦合。如果宿主机目录发生改变，只要改变数据卷与宿主机目录之间的映射关系即可。</li></ul></div><h3 id="命令-2"><a class="anchor" href="#命令-2">#</a> 命令</h3><table><thead><tr><th><strong>命令</strong></th><th><strong>说明</strong></th><th><strong>文档地址</strong></th></tr></thead><tbody><tr><td>docker volume create</td><td>创建数据卷</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS92b2x1bWVfY3JlYXRlLw==">docker volume create</span></td></tr><tr><td>docker volume ls</td><td>查看所有数据卷</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS92b2x1bWVfbHMv">docs.docker.com</span></td></tr><tr><td>docker volume rm</td><td>删除指定数据卷</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS92b2x1bWVfcHJ1bmUv">docs.docker.com</span></td></tr><tr><td>docker volume inspect</td><td>查看某个数据卷的详情</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS92b2x1bWVfaW5zcGVjdC8=">docs.docker.com</span></td></tr><tr><td>docker volume prune</td><td>清除数据卷</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS92b2x1bWVfcHJ1bmUv">docker volume prune</span></td></tr></tbody></table><pre><code class="language-Bash"># 挂载本地目录
+-v 本地目录:容器内目录
+# 挂载本地文件
+-v 本地文件:容器内文件
+</code></pre><p>演示：</p><pre><code class="language-PowerShell"># 1.首先创建容器并指定数据卷，注意通过 
+# -v 参数来指定数据卷 卷名:容器内路径 / 
+docker run -d --name nginx -p 80:80 -v html:/usr/share/nginx/html nginx
+
+# 2.然后查看数据卷
+docker volume ls
+# 结果
+DRIVER    VOLUME NAME
+local     29524ff09715d3688eae3f99803a2796558dbd00ca584a25a4bbc193ca82459f
+local     html
+
+# 3.查看数据卷详情
+docker volume inspect html
+# 结果
+[
+    &#123;
+        &quot;CreatedAt&quot;: &quot;2024-05-17T19:57:08+08:00&quot;,
+        &quot;Driver&quot;: &quot;local&quot;,
+        &quot;Labels&quot;: null,
+        &quot;Mountpoint&quot;: &quot;/var/lib/docker/volumes/html/_data&quot;,
+        &quot;Name&quot;: &quot;html&quot;,
+        &quot;Options&quot;: null,
+        &quot;Scope&quot;: &quot;local&quot;
+    &#125;
+]
+
+# 4.查看/var/lib/docker/volumes/html/_data目录
+ll /var/lib/docker/volumes/html/_data
+# 可以看到与nginx的html目录内容一样，结果如下：
+总用量 8
+-rw-r--r--. 1 root root 497 12月 28 2021 50x.html
+-rw-r--r--. 1 root root 615 12月 28 2021 index.html
+
+# 5.进入该目录，并随意修改index.html内容
+cd /var/lib/docker/volumes/html/_data
+vi index.html
+
+# 6.打开页面，查看效果
+
+# 7.进入容器内部，查看/usr/share/nginx/html目录内的文件是否变化
+docker exec -it nginx bash
+</code></pre><h1 id="自定义镜像"><a class="anchor" href="#自定义镜像">#</a> 自定义镜像</h1><p>也就是实际开发中可能要在团队内互传环境，便于使用（打包 + 安装）</p><p>以 java 环境为例</p><ul><li>准备 Linux 运行环境（java 项目并不需要完整的操作系统，仅仅是基础运行环境即可）</li><li>安装并配置 JDK</li><li>拷贝 jar 包</li><li>配置启动脚本</li></ul><p>上述步骤中的每一次操作其实都是在生产一些文件（系统运行环境、函数库、配置最终都是磁盘文件），所以<strong>镜像就是一堆文件的集合</strong>。</p><p>但需要注意的是，镜像文件不是随意堆放的，而是按照操作的步骤分层叠加而成，每一层形成的文件都会单独打包并标记一个唯一 id，称为<strong> Layer</strong>（<strong>层</strong>）。这样，如果我们构建时用到的某些层其他人已经制作过，就可以直接拷贝使用这些层，而不用重复制作。</p><p>分层：减少工作 + 共享</p><h2 id="dockerfile-指令"><a class="anchor" href="#dockerfile-指令">#</a> Dockerfile 指令</h2><p><a href="%5Bhttps://docs.docker.com/engine/reference/builder/%5D(https://docs.docker.com/engine/reference/builder/)">官方文档</a></p><table><thead><tr><th><strong>指令</strong></th><th><strong>说明</strong></th><th><strong>示例</strong></th></tr></thead><tbody><tr><td><strong>FROM</strong></td><td>指定基础镜像</td><td><code>FROM centos:6</code></td></tr><tr><td><strong>ENV</strong></td><td>设置环境变量，可在后面指令使用</td><td><code>ENV key value</code></td></tr><tr><td><strong>COPY</strong></td><td>拷贝本地文件到镜像的指定目录</td><td><code>COPY ./xx.jar /tmp/app.jar</code></td></tr><tr><td><strong>RUN</strong></td><td>执行 Linux 的 shell 命令，一般是安装过程的命令</td><td><code>RUN yum install gcc</code></td></tr><tr><td><strong>EXPOSE</strong></td><td>指定容器运行时监听的端口，是给镜像使用者看的</td><td>EXPOSE 8080</td></tr><tr><td><strong>ENTRYPOINT</strong></td><td>镜像中应用的启动命令，容器运行时调用</td><td>ENTRYPOINT java -jar xx.jar</td></tr></tbody></table><pre><code class="language-Dockerfile"># 指定基础镜像
+FROM ubuntu:16.04
+# 配置环境变量，JDK的安装目录、容器内时区
+ENV JAVA_DIR=/usr/local
+ENV TZ=Asia/Shanghai
+# 拷贝jdk和java项目的包
+COPY ./jdk8.tar.gz $JAVA_DIR/
+COPY ./docker-demo.jar /tmp/app.jar
+# 设定时区
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime &amp;&amp; echo $TZ &gt; /etc/timezone
+# 安装JDK
+RUN cd $JAVA_DIR \
+ &amp;&amp; tar -xf ./jdk8.tar.gz \
+ &amp;&amp; mv ./jdk1.8.0_144 ./java8
+# 配置环境变量
+ENV JAVA_HOME=$JAVA_DIR/java8
+ENV PATH=$PATH:$JAVA_HOME/bin
+# 指定项目监听的端口
+EXPOSE 8080
+# 入口，java项目的启动命令
+ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;/app.jar&quot;]
+</code></pre><p>有人提供了基础的系统加 JDK 环境，我们在此基础上制作 java 镜像，就可以省去 JDK 的配置了：</p><pre><code class="language-Dockerfile"># 基础镜像
+FROM openjdk:11.0-jre-buster
+# 设定时区
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime &amp;&amp; echo $TZ &gt; /etc/timezone
+# 拷贝jar包
+COPY docker-demo.jar /app.jar
+# 入口
+ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;/app.jar&quot;]
+</code></pre><h2 id="构建"><a class="anchor" href="#构建">#</a> 构建</h2><p>将上述 Dockerfile 文件和要打包的 jar 包放一起</p><pre><code class="language-Bash"># 进入镜像目录
+cd /root/demo
+# 开始构建
+docker build -t docker-demo:1.0 .
+</code></pre><p>命令说明：</p><ul><li><code>docker build</code> : 就是构建一个 docker 镜像</li><li><code>-t docker-demo:1.0</code> ： <code>-t</code> 参数是指定镜像的名称（ <code>repository</code> 和 <code>tag</code> ）</li><li><code>.</code> : 最后的点是指构建时 Dockerfile 所在路径，由于我们进入了 demo 目录，所以指定的是 <code>.</code> 代表当前目录，也可以直接指定为某目录</li></ul><p>之后 <code>docker images</code> 就看得到了，然后正常 run 使用</p><h1 id="网络"><a class="anchor" href="#网络">#</a> 网络</h1><p>多服务之间可能需要互相访问，本节就是容器之间访问的整理。</p><p>虽然外部不能访问容器（只能映射的接口），但容器之间本身在一个网段。所有的容器都以 bridge 的形式连接到 docker 的一个虚拟网桥上</p><p>但是，容器的网络 IP 其实是一个虚拟的 IP，其值并不固定与某一个容器绑定，如果我们在开发时写死某个 IP，而再部署时很可能容器的 IP 会发生变化，连接会失败。</p><p><a href="%5Bhttps://docs.docker.com/engine/reference/commandline/network/%5D(https://docs.docker.com/engine/reference/commandline/network/)">官方文档</a></p><table><thead><tr><th><strong>命令</strong></th><th><strong>说明</strong></th><th><strong>文档地址</strong></th></tr></thead><tbody><tr><td>docker network create</td><td>创建一个网络</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9uZXR3b3JrX2NyZWF0ZS8=">docker network create</span></td></tr><tr><td>docker network ls</td><td>查看所有网络</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9uZXR3b3JrX2xzLw==">docs.docker.com</span></td></tr><tr><td>docker network rm</td><td>删除指定网络</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9uZXR3b3JrX3JtLw==">docs.docker.com</span></td></tr><tr><td>docker network prune</td><td>清除未使用的网络</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9uZXR3b3JrX3BydW5lLw==">docs.docker.com</span></td></tr><tr><td>docker network connect</td><td>使指定容器连接加入某网络</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9uZXR3b3JrX2Nvbm5lY3Qv">docs.docker.com</span></td></tr><tr><td>docker network disconnect</td><td>使指定容器连接离开某网络</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9uZXR3b3JrX2Rpc2Nvbm5lY3Qv">docker network disconnect</span></td></tr><tr><td>docker network inspect</td><td>查看网络详细信息</td><td><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL3JlZmVyZW5jZS9jb21tYW5kbGluZS9uZXR3b3JrX2luc3BlY3Qv">docker network inspect</span></td></tr></tbody></table><pre><code class="language-Bash"># 1.首先通过命令创建一个网络
+docker network create hmall
+
+# 2.然后查看网络
+docker network ls
+# 结果：
+NETWORK ID     NAME      DRIVER    SCOPE
+639bc44d0a87   bridge    bridge    local
+403f16ec62a2   hmall     bridge    local
+0dc0f72a0fbb   host      host      local
+cd8d3e8df47b   none      null      local
+# 其中，除了hmall以外，其它都是默认的网络
+
+# 3.让dd和mysql都加入该网络，注意，在加入网络时可以通过--alias给容器起别名
+# 这样该网络内的其它容器可以用别名互相访问！
+# 3.1.mysql容器，指定别名为db，另外每一个容器都有一个别名是容器名
+docker network connect hmall mysql --alias db
+# 3.2.db容器，也就是我们的java项目
+docker network connect hmall dd
+
+# 4.进入dd容器，尝试利用别名访问db
+# 4.1.进入容器
+docker exec -it dd bash
+# 4.2.用db别名访问
+ping db
+# 结果
+PING db (172.18.0.2) 56(84) bytes of data.
+64 bytes from mysql.hmall (172.18.0.2): icmp_seq=1 ttl=64 time=0.070 ms
+64 bytes from mysql.hmall (172.18.0.2): icmp_seq=2 ttl=64 time=0.056 ms
+# 4.3.用容器名访问
+ping mysql
+# 结果：
+PING mysql (172.18.0.2) 56(84) bytes of data.
+64 bytes from mysql.hmall (172.18.0.2): icmp_seq=1 ttl=64 time=0.044 ms
+64 bytes from mysql.hmall (172.18.0.2): icmp_seq=2 ttl=64 time=0.054 ms
+</code></pre><p>这样可以将有需要的服务放在一个网桥，通过命名访问即可，无需管虚拟 ip</p><div class="note info no-icon"><ul><li>在自定义网络中，可以给容器起多个别名，默认的别名是容器名本身</li><li>在同一个自定义网络中的容器，可以通过别名互相访问</li></ul></div><h1 id="项目部署案例"><a class="anchor" href="#项目部署案例">#</a> 项目部署案例</h1><p>见<a href="#%E8%B5%84%E6%96%99">资料</a>中的文档</p><h1 id="dockercompose"><a class="anchor" href="#dockercompose">#</a> DockerCompose</h1><p>部署一个简单的 java 项目，其中包含 3 个容器：</p><ul><li>MySQL</li><li>Nginx</li><li>Java 项目</li></ul><p>而稍微复杂的项目，其中还会有各种各样的其它中间件，需要部署的东西远不止 3 个。如果还像之前那样手动的逐一部署，就太麻烦了。</p><p>而 Docker Compose 就可以帮助我们实现<strong>多个相互关联的 Docker 容器的快速部署</strong>。它允许用户通过一个单独的 docker-compose.yml 模板文件（YAML 格式）来定义一组相关联的应用容器。</p><p>docker-compose.yml 文件的基本语法可以参考<span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vY29tcG9zZS9jb21wb3NlLWZpbGUvbGVnYWN5LXZlcnNpb25zLw==">官方文档</span></p><p>docker-compose 文件中可以定义多个相互关联的应用容器，每一个应用容器被称为一个服务（service）。由于 service 就是在定义某个应用的运行时参数，因此与 <code>docker run</code> 参数非常相似。</p><p>举例来说，用 docker run 部署 MySQL 的命令如下：</p><pre><code class="language-Bash">docker run -d \
   --name mysql \
   -p 3306:3306 \
   -e TZ=Asia/Shanghai \
   -e MYSQL_ROOT_PASSWORD=123 \
+  -v ./mysql/data:/var/lib/mysql \
+  -v ./mysql/conf:/etc/mysql/conf.d \
+  -v ./mysql/init:/docker-entrypoint-initdb.d \
+  --network hmall
   mysql
-</code></pre><h1 id="学习资料"><a class="anchor" href="#学习资料">#</a> 学习资料</h1><p>黑马的：<span class="spoiler" title="你知道得太多了"><span class="exturl" data-url="aHR0cHM6Ly9iMTFldDN1bjUzbS5mZWlzaHUuY24vd2lraS9NV1FJdzRadmhpbDBJNWt0UEh3Y29xWmRuZWM/ZnJvbT1mcm9tX2NvcHlsaW5r">文档</span>，可以去官号支持，至少资料免费，料也有</span></p></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">Edited on</span> <time title="Modified: 2024-05-22 20:38:19" itemprop="dateModified" datetime="2024-05-22T20:38:19+08:00">2024-05-22</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> Donate</button><p>Give me a cup of [coffee]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.jpg" alt="ZY WeChat Pay"><p>WeChat Pay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>ZY <i class="ic i-at"><em>@</em></i>世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它</li><li class="link"><strong>Post link: </strong><a href="https://zyakmd.github.io/2024/03/29/Docker/" title="Docker">https://zyakmd.github.io/2024/03/29/Docker/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2024/03/22/%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;t.mwm.moe&#x2F;fj?271359" title="项目优化"><span class="type">Previous Post</span> <span class="category"><i class="ic i-flag"></i></span><h3>项目优化</h3></a></div><div class="item right"><a href="/2024/04/01/RPC%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;t.mwm.moe&#x2F;fj?768021" title="RPC项目"><span class="type">Next Post</span> <span class="category"><i class="ic i-flag"></i> RPC</span><h3>RPC项目</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E5%85%A5"><span class="toc-number">1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99"><span class="toc-number">4.</span> <span class="toc-text">学习资料</span></a></li></ol></div><div class="related panel pjax" data-title="Related"></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="ZY" data-src="/images/avatar.jpg"><p class="name" itemprop="name">ZY</p><div class="description" itemprop="description">行到水穷处，坐看云起时</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">20</span> <span class="name">posts</span></a></div><div class="item categories"><a href="/categories/"><span class="count">4</span> <span class="name">categories</span></a></div><div class="item tags"><a href="/tags/"><span class="count">5</span> <span class="name">tags</span></a></div></nav><div class="social"><a href="https://github.com/zyakmd" title="https:&#x2F;&#x2F;github.com&#x2F;zyakmd" class="item github" rel="noopener" target="_blank"><i class="ic i-github"></i></a></div><ul class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a></li></ul></li></ul></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2024/03/22/%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2024/04/01/RPC%E9%A1%B9%E7%9B%AE/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/spring%E5%A4%8D%E4%B9%A0/" title="In spring复习">spring复习</a></div><span><a href="/2024/03/15/spring%E5%A4%8D%E4%B9%A0/Spring%20MVC/" title="Spring MVC">Spring MVC</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/21/Java%E7%AC%94%E8%AE%B0/" title="Java笔记">Java笔记</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/hexo%E4%BD%BF%E7%94%A8/" title="In hexo使用">hexo使用</a></div><span><a href="/2024/03/06/hexo%E4%BD%BF%E7%94%A8/hexo+github/" title="hexo + github 博客搭建">hexo + github 博客搭建</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/spring%E5%A4%8D%E4%B9%A0/" title="In spring复习">spring复习</a></div><span><a href="/2024/03/11/spring%E5%A4%8D%E4%B9%A0/Spring%20framework/" title="Spring framework">Spring framework</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/spring%E5%A4%8D%E4%B9%A0/" title="In spring复习">spring复习</a></div><span><a href="/2024/03/20/spring%E5%A4%8D%E4%B9%A0/MyBatis%20Plus/" title="MyBatis Plus">MyBatis Plus</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/spring%E5%A4%8D%E4%B9%A0/" title="In spring复习">spring复习</a></div><span><a href="/2024/03/18/spring%E5%A4%8D%E4%B9%A0/Maven/" title="Maven">Maven</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/hexo%E4%BD%BF%E7%94%A8/" title="In hexo使用">hexo使用</a></div><span><a href="/2024/03/09/hexo%E4%BD%BF%E7%94%A8/%E7%95%8C%E9%9D%A2%E7%9B%B8%E5%85%B3/" title="界面相关">界面相关</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/05/09/%E8%99%9A%E6%8B%9F%E4%B8%96%E7%95%8Ctricks/Clash%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A7%84%E5%88%99/" title="Clash自定义规则">Clash自定义规则</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/22/%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96/" title="项目优化">项目优化</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/hexo%E4%BD%BF%E7%94%A8/" title="In hexo使用">hexo使用</a></div><span><a href="/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E7%BD%91%E7%AB%99%E6%A0%B7%E5%BC%8F/" title="网站样式">网站样式</a></span></li></ul></div></div><div class="status"><div class="copyright">&copy; 2023 – <span itemprop="copyrightYear">2024</span> <span class="with-love"><i class="ic i-"></i> </span><span class="author" itemprop="copyrightHolder">ZY @ ZY Blog</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="Symbols count total">538k words</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="Reading time total">8:09</span></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL={path:"2024/03/29/Docker/",favicon:{show:"（●´3｀●）Goooood",hide:"(´Д｀)Booooom"},search:{placeholder:"Search for Posts",empty:"We didn't find any results for the search: ${query}",stats:"${hits} results found in ${time} ms"},valine:!0,fancybox:!0,copyright:'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({pluginRootPath:"live2dw/",pluginJsPath:"lib/",pluginModelPath:"assets/",tagMode:!1,debug:!1,model:{jsonPath:"/live2dw/assets/hijiki.model.json"},display:{position:"left",width:150,height:300},mobile:{show:!0},log:!1})</script></body></html><!-- rebuild by hrmmi -->
+</code></pre><p>如果用 <code>docker-compose.yml</code> 文件来定义，就是这样：</p><pre><code class="language-YAML">version: &quot;3.8&quot;
+
+services:
+  mysql:
+    image: mysql
+    container_name: mysql
+    ports:
+      - &quot;3306:3306&quot;
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_ROOT_PASSWORD: 123
+    volumes:
+      - &quot;./mysql/conf:/etc/mysql/conf.d&quot;
+      - &quot;./mysql/data:/var/lib/mysql&quot;
+    networks:
+      - new
+networks:
+  new:
+    name: hmall
+</code></pre><p>对比如下：</p><table><thead><tr><th><strong>docker run 参数</strong></th><th><strong>docker compose 指令</strong></th><th><strong>说明</strong></th></tr></thead><tbody><tr><td>--name</td><td>container_name</td><td>容器名称</td></tr><tr><td>-p</td><td>ports</td><td>端口映射</td></tr><tr><td>-e</td><td>environment</td><td>环境变量</td></tr><tr><td>-v</td><td>volumes</td><td>数据卷配置</td></tr><tr><td>--network</td><td>networks</td><td>网络</td></tr></tbody></table><h2 id="命令-3"><a class="anchor" href="#命令-3">#</a> 命令</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vY29tcG9zZS9yZWZlcmVuY2Uv">官方文档</span></p><p>基本语法如下：</p><pre><code class="language-Bash">docker compose [OPTIONS] [COMMAND]
+</code></pre><p>其中，OPTIONS 和 COMMAND 都是可选参数，比较常见的有：</p><table><thead><tr><th><strong>类型</strong></th><th><strong>参数或指令</strong></th><th><strong>说明</strong></th></tr></thead><tbody><tr><td>Options</td><td>-f</td><td>指定 compose 文件的路径和名称</td></tr><tr><td></td><td>-p</td><td>指定 project 名称。project 就是当前 compose 文件中设置的多个 service 的集合，是逻辑概念</td></tr><tr><td>Commands</td><td>up</td><td>创建并启动所有 service 容器</td></tr><tr><td></td><td>down</td><td>停止并移除所有容器、网络</td></tr><tr><td></td><td>ps</td><td>列出所有启动的容器</td></tr><tr><td></td><td>logs</td><td>查看指定容器的日志</td></tr><tr><td></td><td>stop</td><td>停止容器</td></tr><tr><td></td><td>start</td><td>启动容器</td></tr><tr><td></td><td>restart</td><td>重启容器</td></tr><tr><td></td><td>top</td><td>查看运行的进程</td></tr><tr><td></td><td>exec</td><td>在指定的运行中容器中执行命令</td></tr></tbody></table><p>教学演示：</p><pre><code class="language-Bash"># 1.进入root目录
+cd /root
+
+# 2.删除旧容器
+docker rm -f $(docker ps -qa)
+
+# 3.删除hmall镜像
+docker rmi hmall
+
+# 4.清空MySQL数据
+rm -rf mysql/data
+
+# 5.启动所有, -d 参数是后台启动
+docker compose up -d
+# 结果：
+[+] Building 15.5s (8/8) FINISHED
+ =&gt; [internal] load build definition from Dockerfile                                    0.0s
+ =&gt; =&gt; transferring dockerfile: 358B                                                    0.0s
+ =&gt; [internal] load .dockerignore                                                       0.0s
+ =&gt; =&gt; transferring context: 2B                                                         0.0s
+ =&gt; [internal] load metadata for docker.io/library/openjdk:11.0-jre-buster             15.4s
+ =&gt; [1/3] FROM docker.io/library/openjdk:11.0-jre-buster@sha256:3546a17e6fb4ff4fa681c3  0.0s
+ =&gt; [internal] load build context                                                       0.0s
+ =&gt; =&gt; transferring context: 98B                                                        0.0s
+ =&gt; CACHED [2/3] RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &amp;&amp; echo   0.0s
+ =&gt; CACHED [3/3] COPY hm-service.jar /app.jar                                           0.0s
+ =&gt; exporting to image                                                                  0.0s
+ =&gt; =&gt; exporting layers                                                                 0.0s
+ =&gt; =&gt; writing image sha256:32eebee16acde22550232f2eb80c69d2ce813ed099640e4cfed2193f71  0.0s
+ =&gt; =&gt; naming to docker.io/library/root-hmall                                           0.0s
+[+] Running 4/4
+ ✔ Network hmall    Created                                                             0.2s
+ ✔ Container mysql  Started                                                             0.5s
+ ✔ Container hmall  Started                                                             0.9s
+ ✔ Container nginx  Started                                                             1.5s
+
+# 6.查看镜像
+docker compose images
+# 结果
+CONTAINER           REPOSITORY          TAG                 IMAGE ID            SIZE
+hmall               root-hmall          latest              32eebee16acd        362MB
+mysql               mysql               latest              3218b38490ce        516MB
+nginx               nginx               latest              605c77e624dd        141MB
+
+# 7.查看容器
+docker compose ps
+# 结果
+NAME                IMAGE               COMMAND                  SERVICE             CREATED             STATUS              PORTS
+hmall               root-hmall          &quot;java -jar /app.jar&quot;     hmall               54 seconds ago      Up 52 seconds       0.0.0.0:8080-&gt;8080/tcp, :::8080-&gt;8080/tcp
+mysql               mysql               &quot;docker-entrypoint.s…&quot;   mysql               54 seconds ago      Up 53 seconds       0.0.0.0:3306-&gt;3306/tcp, :::3306-&gt;3306/tcp, 33060/tcp
+nginx               nginx               &quot;/docker-entrypoint.…&quot;   nginx               54 seconds ago      Up 52 seconds       80/tcp, 0.0.0.0:18080-18081-&gt;18080-18081/tcp, :::18080-18081-&gt;18080-18081/tcp
+</code></pre><h1 id="资料"><a class="anchor" href="#资料">#</a> 资料</h1><p>黑马的：<span class="spoiler" title="你知道得太多了"><span class="exturl" data-url="aHR0cHM6Ly9iMTFldDN1bjUzbS5mZWlzaHUuY24vd2lraS9NV1FJdzRadmhpbDBJNWt0UEh3Y29xWmRuZWM/ZnJvbT1mcm9tX2NvcHlsaW5r">文档</span>，可以去官号支持，至少资料免费，也有用</span></p></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">Edited on</span> <time title="Modified: 2024-05-23 19:57:25" itemprop="dateModified" datetime="2024-05-23T19:57:25+08:00">2024-05-23</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> Donate</button><p>Give me a cup of [coffee]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.jpg" alt="ZY WeChat Pay"><p>WeChat Pay</p></div></div></div><div id="copyright"><ul><li class="author"><strong>Post author: </strong>ZY <i class="ic i-at"><em>@</em></i>世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它</li><li class="link"><strong>Post link: </strong><a href="https://zyakmd.github.io/2024/03/29/Docker/" title="Docker">https://zyakmd.github.io/2024/03/29/Docker/</a></li><li class="license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> unless stating additionally.</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2024/03/22/%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;t.mwm.moe&#x2F;fj?219284" title="项目优化"><span class="type">Previous Post</span> <span class="category"><i class="ic i-flag"></i></span><h3>项目优化</h3></a></div><div class="item right"><a href="/2024/04/01/RPC%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;t.mwm.moe&#x2F;fj?163060" title="RPC项目"><span class="type">Next Post</span> <span class="category"><i class="ic i-flag"></i> RPC</span><h3>RPC项目</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="Contents"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E5%85%A5"><span class="toc-number">1.</span> <span class="toc-text">引入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4"><span class="toc-number">3.1.</span> <span class="toc-text">命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A7%A3%E8%AF%BB"><span class="toc-number">3.2.</span> <span class="toc-text">命令解读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E5%88%AB%E5%90%8D"><span class="toc-number">3.3.</span> <span class="toc-text">Linux 别名</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="toc-number">4.</span> <span class="toc-text">数据卷</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4-2"><span class="toc-number">4.0.1.</span> <span class="toc-text">命令</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%95%9C%E5%83%8F"><span class="toc-number">5.</span> <span class="toc-text">自定义镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#dockerfile-%E6%8C%87%E4%BB%A4"><span class="toc-number">5.1.</span> <span class="toc-text">Dockerfile 指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA"><span class="toc-number">5.2.</span> <span class="toc-text">构建</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C"><span class="toc-number">6.</span> <span class="toc-text">网络</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E6%A1%88%E4%BE%8B"><span class="toc-number">7.</span> <span class="toc-text">项目部署案例</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#dockercompose"><span class="toc-number">8.</span> <span class="toc-text">DockerCompose</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4-3"><span class="toc-number">8.1.</span> <span class="toc-text">命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%84%E6%96%99"><span class="toc-number">9.</span> <span class="toc-text">资料</span></a></li></div><div class="related panel pjax" data-title="Related"></div><div class="overview panel" data-title="Overview"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="ZY" data-src="/images/avatar.jpg"><p class="name" itemprop="name">ZY</p><div class="description" itemprop="description">行到水穷处，坐看云起时</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">20</span> <span class="name">posts</span></a></div><div class="item categories"><a href="/categories/"><span class="count">4</span> <span class="name">categories</span></a></div><div class="item tags"><a href="/tags/"><span class="count">5</span> <span class="name">tags</span></a></div></nav><div class="social"><a href="https://github.com/zyakmd" title="https:&#x2F;&#x2F;github.com&#x2F;zyakmd" class="item github" rel="noopener" target="_blank"><i class="ic i-github"></i></a></div><ul class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>Home</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a></li></ul></li></ul></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2024/03/22/%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2024/04/01/RPC%E9%A1%B9%E7%9B%AE/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>Random Posts</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/22/%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96/" title="项目优化">项目优化</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/13/MySQL/" title="MySQL">MySQL</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/03/29/Docker/" title="Docker">Docker</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/hexo%E4%BD%BF%E7%94%A8/" title="In hexo使用">hexo使用</a></div><span><a href="/2024/03/06/hexo%E4%BD%BF%E7%94%A8/hexo+github/" title="hexo + github 博客搭建">hexo + github 博客搭建</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/spring%E5%A4%8D%E4%B9%A0/" title="In spring复习">spring复习</a></div><span><a href="/2024/03/18/spring%E5%A4%8D%E4%B9%A0/Maven/" title="Maven">Maven</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/spring%E5%A4%8D%E4%B9%A0/" title="In spring复习">spring复习</a></div><span><a href="/2024/03/19/spring%E5%A4%8D%E4%B9%A0/SpringBoot/" title="SpringBoot">SpringBoot</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2024/05/08/%E9%80%9F%E8%A7%88/" title="速览">速览</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/spring%E5%A4%8D%E4%B9%A0/" title="In spring复习">spring复习</a></div><span><a href="/2024/03/11/spring%E5%A4%8D%E4%B9%A0/Spring%20framework/" title="Spring framework">Spring framework</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/spring%E5%A4%8D%E4%B9%A0/" title="In spring复习">spring复习</a></div><span><a href="/2024/03/15/spring%E5%A4%8D%E4%B9%A0/Spring%20MVC/" title="Spring MVC">Spring MVC</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/hexo%E4%BD%BF%E7%94%A8/" title="In hexo使用">hexo使用</a></div><span><a href="/2024/03/07/hexo%E4%BD%BF%E7%94%A8/%E5%9C%A8obisidian%E4%B8%8A%E4%BD%BF%E7%94%A8/" title="在obisidian上使用">在obisidian上使用</a></span></li></ul></div></div><div class="status"><div class="copyright">&copy; 2023 – <span itemprop="copyrightYear">2024</span> <span class="with-love"><i class="ic i-"></i> </span><span class="author" itemprop="copyrightHolder">ZY @ ZY Blog</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="Symbols count total">549k words</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="Reading time total">8:19</span></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL={path:"2024/03/29/Docker/",favicon:{show:"（●´3｀●）Goooood",hide:"(´Д｀)Booooom"},search:{placeholder:"Search for Posts",empty:"We didn't find any results for the search: ${query}",stats:"${hits} results found in ${time} ms"},valine:!0,fancybox:!0,copyright:'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html><!-- rebuild by hrmmi -->
